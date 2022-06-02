@@ -1,0 +1,143 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+
+}
+body{
+    border: 2px solid rgb(0, 0, 0);
+    /* border-radius: 12px; */
+    border-width: 15px;
+    padding: 2px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: url(images/bg2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+body::before {
+    content: "";
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0px;
+    position: absolute;
+    height: 100vh;
+    background: url(images/shape-1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -150;
+    opacity: 0.9;
+}
+
+section#landing-page {
+    position: fixed;
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.branding {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    padding: 20px 0;
+}
+
+ul.listing {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+ul.listing li {
+    margin: 0 20px;
+}
+
+ul.listing > li > a {
+    color: rgb(9, 255, 0);
+    text-decoration: unset;
+    font-size: 20px;
+    line-height: 30px;
+    
+    border: 2px solid red;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.site-url {
+    display: 20px;
+}
+
+.site-url > img {
+    width: 100%;
+    max-width: 100px;
+}
+
+.content {
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 200px);
+}
+
+h1 {
+    font-size: 100px;
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(255, 255, 247);
+
+}
+
+p {
+    font-family: 'Times New Roman', cursive;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgb(208, 255, 0);
+}
+
+.btn-explore {
+    padding: 20px;
+    display: inline-block;
+    margin-top: 20px;
+    background: url(images/button.png)no-repeat;
+    background-size: cover;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 220px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: unset;
+}
+
+ul.social-icons.listing {
+    position: fixed;
+    bottom: 20px;
+}
+
+ul.social-icons.listing > li > a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: rgb(0, 0, 0); */
+    color: #000;
+    border: 2px solid;
+    border-radius: 100%;
+    font-size: 15px;
+}
+
+ul.social-icons.listing > li {
+    margin: 1 10px;
+}
